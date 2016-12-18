@@ -58,6 +58,7 @@ body {
   padding-top: 100px;
   max-width: 80%;
   margin: 0 auto;
+  text-align: left;
 }
 
 .content p {
