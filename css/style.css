@@ -6,11 +6,6 @@
   padding: 0;
 }
 
-.black {
-  color: #fff;
-  background: #222;
-}
-
 body {
   background: #222;
   text-align: center;
@@ -20,37 +15,77 @@ body {
   position: relative;
 }
 
-#intro {
-  color: #222;
+/* Header section */
+
+#what {
   background: #fff;
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
-  padding-bottom: 100px;
+  padding-bottom: 300px;
   margin-top: -100px;
 }
 
-#intro .content {
+#what .content {
   padding: 150px 0 50px 0;
   text-align: left;
   max-width: 80%;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg);
 }
 
-#intro h1 {
+#what .intro {
+  margin-bottom: 100px;
+}
+
+#what .intro h1 {
+  color: #333333;
   font-size: 60px;
 }
 
-#intro p {
+#what .intro p {
+  color: #767676;
   font-size: 30px;
   font-weight: 300;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-#description {
+#what .highlights ul {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#what .highlights li {
+  flex: 1;
+  height: 150px;
+  min-width: 21%;
+  max-width: 21%;
+  margin: 0 4% 0 0;
+  padding-top: 220px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 80%;
+}
+
+#what .highlights h3 {
+  color: #333333;
+  font-size: 20px;
+}
+
+#what .highlights p {
+  margin-top: 8px;
+  color: #767676;
+}
+
+/* Main section */
+
+#why {
   color: #222;
   background: #FAD01C;
   -webkit-transform: skew(0deg, -3deg);
@@ -59,21 +94,50 @@ body {
   margin-top: -100px;
 }
 
-#description .content {
+#why .content {
   padding: 100px 0 50px 0;
   text-align: left;
   max-width: 80%;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg);
 }
 
-#description p {
+#why .whats-wrong h2 {
+  color: #333333;
+  font-size: 40px;
+}
+
+#why .whats-wrong p {
   font-weight: 300;
   padding-top: 12px;
   padding-bottom: 40px;
 }
+
+#why .gamification h2 {
+  color: #333333;
+  font-size: 40px;
+}
+
+#why .gamification p {
+  font-weight: 300;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+#why .plans h2 {
+  color: #333333;
+  font-size: 40px;
+}
+
+#why .plans p {
+  font-weight: 300;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+/* Footer section */
 
 footer {
   color: #fff;
@@ -88,7 +152,7 @@ footer .content {
   padding: 50px 0 50px 0;
   text-align: left;
   max-width: 80%;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
@@ -117,9 +181,9 @@ footer #partners ul {
 
 footer #partners li {
   flex: 1;
-  -webkit-flex: 1 1 auto;
   height: 150px;
-  min-width: 30%;
+  min-width: 23%;
+  max-width: 23%;
   margin: 0 2% 2% 0;
   background-color: rgba(0,0,0,0.1);
   background-size: 80%;
