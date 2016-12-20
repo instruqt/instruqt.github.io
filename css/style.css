@@ -39,6 +39,17 @@ body {
   transform: skew(0deg, 3deg);
 }
 
+#intro h1 {
+  font-size: 60px;
+}
+
+#intro p {
+  font-size: 30px;
+  font-weight: 300;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
 #description {
   color: #222;
   background: #FAD01C;
@@ -58,7 +69,13 @@ body {
   transform: skew(0deg, 3deg);
 }
 
-#footer {
+#description p {
+  font-weight: 300;
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+footer {
   color: #fff;
   background: #222;
   -webkit-transform: skew(0deg, 3deg);
@@ -67,7 +84,7 @@ body {
   margin-top: -100px;
 }
 
-#footer .content {
+footer .content {
   padding: 50px 0 50px 0;
   text-align: left;
   max-width: 80%;
@@ -77,9 +94,83 @@ body {
   transform: skew(0deg, -3deg);
 }
 
+footer #partners {
+  margin-top: 50px;
+}
 
-.content p {
+footer #partners h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   font-weight: 300;
-  padding-top: 12px;
-  padding-bottom: 40px;
+}
+
+footer #partners ul {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+footer #partners li {
+  flex: 1;
+  -webkit-flex: 1 1 auto;
+  height: 150px;
+  min-width: 30%;
+  margin: 0 2% 2% 0;
+  background-color: rgba(0,0,0,0.1);
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+footer #partners .partner-xebia {
+  background-image: url('../img/partners/xebia.svg');
+}
+
+footer #partners .partner-google {
+  background-image: url('../img/partners/google.png');
+}
+
+footer #partners .partner-microsoft {
+  background-image: url('../img/partners/microsoft.png');
+}
+
+footer #partners .partner-hashicorp {
+  background-image: url('../img/partners/hashicorp.png');
+}
+
+footer #partners .partner-mesos {
+  background-image: url('../img/partners/mesos.png');
+}
+
+footer #partners .partner-docker {
+  background-image: url('../img/partners/docker.png');
+}
+
+footer #social {
+  border-top: 1px solid rgba(255,255,255,0.04);
+  margin-top: 100px;
+  text-align: right;
+}
+
+footer #social h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+footer #social ul {
+  margin: 30px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer #social li {
+  padding: 5px 10px;
+  display: inline-block;
 }
