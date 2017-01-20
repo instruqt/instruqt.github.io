@@ -1,3 +1,7 @@
+.content {
+  min-width: 600px;
+}
+
 blockquote {
   color: #E83E27;
   font-size: 48px;
@@ -199,6 +203,7 @@ footer .content {
 footer #copy {
   display: inline-block;
   padding-left: 20px;
+  font-size: 14px;
 }
 
 footer #social {
