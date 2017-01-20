@@ -1,3 +1,64 @@
+blockquote {
+  color: #E83E27;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 40px 0;
+}
+
+blockquote:before {
+  content: '“'
+}
+
+blockquote:after {
+  content: '”'
+}
+
+section {
+  color: #353740;
+  margin-bottom: 50px;
+}
+
+section .content {
+  padding: 50px 0 50px 0;
+  text-align: left;
+  max-width: 50%;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#intro {
+  margin: 0 0 50px 0;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+#intro p {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 40px 0 5px 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 20px 0 5px 0;
+}
+
+p {
+  margin: 5px 0 20px 0;
+  font-size: 24px;
+}
+
+
+
+
 *,
 *:before,
 *:after {
@@ -7,7 +68,7 @@
 }
 
 body {
-  background: #222;
+  background: #353740;
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -15,210 +76,137 @@ body {
   position: relative;
 }
 
-/* Header section */
+#intro {
+  background: #353740;
+  color: #FFF;
+  -webkit-transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
+  padding-bottom: 100px;
+  margin-top: -100px
+}
 
-#what {
-  background: #fff;
+#intro .content {
+  padding: 150px 0 50px 0;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  -webkit-transform: skew(0deg, 3deg);
+  transform: skew(0deg, 3deg);
+}
+
+#why {
+  background: #ECECEC;
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
   padding-bottom: 300px;
   margin-top: -100px;
 }
 
-#what .content {
-  padding: 150px 0 50px 0;
-  text-align: left;
-  max-width: 80%;
-  width: 70%;
-  margin: 0 auto;
-  -webkit-transform: skew(0deg, 3deg);
-  transform: skew(0deg, 3deg);
-}
-
-#what .intro {
-  margin-bottom: 100px;
-}
-
-#what .intro h1 {
-  color: #333333;
-  font-size: 60px;
-}
-
-#what .intro p {
-  color: #767676;
-  font-size: 30px;
-  font-weight: 300;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-#what .highlights ul {
-  list-style: none;
-  margin: 20px 0 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#what .highlights li {
-  flex: 1;
-  height: 150px;
-  min-width: 21%;
-  max-width: 21%;
-  margin: 0 4% 0 0;
-  padding-top: 220px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 80%;
-}
-
-#what .highlights h3 {
-  color: #333333;
-  font-size: 20px;
-}
-
-#what .highlights p {
-  margin-top: 8px;
-  color: #767676;
-}
-
-/* Main section */
-
-#why {
-  color: #222;
-  background: #FAD01C;
-  -webkit-transform: skew(0deg, -3deg);
-  transform: skew(0deg, -3deg);
-  padding-bottom: 100px;
-  margin-top: -100px;
+#why blockquote {
+  margin: 0 0 40px 0;
 }
 
 #why .content {
   padding: 100px 0 50px 0;
   text-align: left;
-  max-width: 80%;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg);
 }
 
-#why .whats-wrong h2 {
-  color: #333333;
-  font-size: 40px;
+#learning {
+  background: #fff;
+  -webkit-transform: skew(0deg, 3deg);
+  transform: skew(0deg, 3deg);
+  padding-bottom: 200px;
+  margin-top: -300px;
 }
 
-#why .whats-wrong p {
-  font-weight: 300;
-  padding-top: 12px;
-  padding-bottom: 40px;
+#learning .content {
+  padding: 50px 0 50px 0;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
 }
 
-#why .gamification h2 {
-  color: #333333;
-  font-size: 40px;
+#gamification {
+  color: #ECECEC;
+  background: #E83E27;
+  -webkit-transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
+  padding-bottom: 100px;
+  margin-top: -220px;
 }
 
-#why .gamification p {
-  font-weight: 300;
-  padding-top: 12px;
-  padding-bottom: 40px;
+#gamification blockquote {
+  color: #fff;
 }
 
-#why .plans h2 {
-  color: #333333;
-  font-size: 40px;
+#gamification .content {
+  padding: 100px 0 50px 0;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-transform: skew(0deg, 3deg);
+  transform: skew(0deg, 3deg);
 }
 
-#why .plans p {
-  font-weight: 300;
-  padding-top: 12px;
-  padding-bottom: 40px;
+#sharing {
+  color: #353740;
+  background: #ECECEC;
+  -webkit-transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
+  padding-bottom: 130px;
+  margin-top: -100px;
+}
+
+#sharing .content {
+  padding: 100px 0 50px 0;
+  text-align: left;
+  max-width: 60%;
+  margin: 0 auto;
+  -webkit-transform: skew(0deg, 3deg);
+  transform: skew(0deg, 3deg);
 }
 
 /* Footer section */
 
 footer {
   color: #fff;
-  background: #222;
+  background: #353740;
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg);
-  padding-bottom:100px;
-  margin-top: -100px;
+  padding-bottom: 20px;
+  margin-top: -150px;
+}
+
+footer blockquote {
+  color: #fff;
 }
 
 footer .content {
   padding: 50px 0 50px 0;
   text-align: left;
-  max-width: 80%;
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
 }
 
-footer #partners {
-  margin-top: 50px;
-}
-
-footer #partners h2 {
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-
-footer #partners ul {
-  list-style: none;
-  margin: 20px 0 0 0;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-footer #partners li {
-  flex: 1;
-  height: 150px;
-  min-width: 23%;
-  max-width: 23%;
-  margin: 0 2% 2% 0;
-  background-color: rgba(0,0,0,0.1);
-  background-size: 80%;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-footer #partners .partner-xebia {
-  background-image: url('../img/partners/xebia.svg');
-}
-
-footer #partners .partner-google {
-  background-image: url('../img/partners/google.png');
-}
-
-footer #partners .partner-microsoft {
-  background-image: url('../img/partners/microsoft.png');
-}
-
-footer #partners .partner-hashicorp {
-  background-image: url('../img/partners/hashicorp.png');
-}
-
-footer #partners .partner-mesos {
-  background-image: url('../img/partners/mesos.png');
-}
-
-footer #partners .partner-docker {
-  background-image: url('../img/partners/docker.png');
+footer #copy {
+  display: inline-block;
+  padding-left: 20px;
 }
 
 footer #social {
-  border-top: 1px solid rgba(255,255,255,0.04);
-  margin-top: 100px;
   text-align: right;
+  display: inline-block;
+  margin-top: 50px;
+  text-align: right;
+  width: 80%;
 }
 
 footer #social h2 {
