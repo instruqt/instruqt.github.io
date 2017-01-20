@@ -108,6 +108,15 @@ body {
 
 #why blockquote {
   margin: 0 0 40px 0;
+  position: relative;
+}
+
+#why blockquote img {
+  position: absolute;
+  display: block;
+  width: 100px;
+  top: -20px;
+  left: -140px;
 }
 
 #why .content {
