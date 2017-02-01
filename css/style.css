@@ -177,12 +177,34 @@ body {
 }
 
 #sharing .content {
-  padding: 100px 0 50px 0;
+  padding: 50px 0 100px 0;
   text-align: left;
   max-width: 60%;
   margin: 0 auto;
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg);
+}
+
+#xebia {
+  color: #FFF;
+  background: #6D1960;
+  -webkit-transform: skew(0deg, 3deg);
+  transform: skew(0deg, 3deg);
+  padding-bottom: 150px;
+  margin-top: -150px;
+}
+
+#xebia .content {
+  padding: 100px 0 50px 0;
+  text-align: left;
+  max-width: 60%;
+  margin: 0 auto;
+  -webkit-transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
+}
+
+#xebia a {
+  color: #FFF;
 }
 
 /* Footer section */
