@@ -112,10 +112,8 @@ header .content {
 #screenshots .content {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  overflow: hidden;
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
-  height: 500px;
 }
 
 #screenshots .content img {
@@ -146,7 +144,7 @@ header .content {
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
   padding-bottom: 0px;
-  margin-top: -200px;
+  margin-top: -300px;
 }
 
 #xebia .content {
