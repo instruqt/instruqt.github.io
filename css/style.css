@@ -63,7 +63,7 @@ header .content {
   -webkit-transform: skew(0deg, 3deg);
   transform: skew(0deg, 3deg);
   margin: -100px 0 100px 0;
-  padding: 50px 30px 20px 30px;
+  padding: 50px 30px 40px 30px;
 }
 
 #features .content {
@@ -103,17 +103,22 @@ header .content {
   flex: 1;
 }
 
-#features .screenshot {
+#screenshots {
+  background: #FFF;
+  margin: -200px 0 100px 0;
+  padding: 150px 30px 20px 30px;
+}
+
+#screenshots .content {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   overflow: hidden;
   width: 1200px;
-  margin-top: 100px;
-  margin-left: -200px;
+  margin: 0 auto;
   height: 500px;
 }
 
-#features .screenshot img {
+#screenshots .content img {
   width: 100%;
   display: block;
 }
