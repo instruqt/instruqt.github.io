@@ -125,8 +125,8 @@ blockquote:after {
   padding-right: 50px; }
   @media only screen and (min-width: 480px) {
     #what .content .highlight {
-      max-width: 50%;
-      min-width: 50%; } }
+      max-width: 100%;
+      min-width: 100%; } }
   @media only screen and (min-width: 768px) {
     #what .content .highlight {
       max-width: 33%;
