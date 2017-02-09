@@ -1,29 +1,37 @@
-@charset "UTF-8";
+// Colors
+$header-color: #E83E27;
+
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 20px;
   margin: 0;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+}
 
 header {
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
-  background-color: #E83E27;
+  background-color: $header-color;
   color: #EFEFEF;
   padding: 50px 30px 60px 30px;
-  margin-top: -50px; }
+  margin-top: -50px;
+}
 
 header .logo {
   white-space: nowrap;
   font-size: 70px;
   font-weight: 900;
-  line-height: 70px; }
+  line-height: 70px;
+}
 
 header .logo img {
   width: 70px;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+}
+
 
 header .content {
   max-width: 1000px;
@@ -31,7 +39,8 @@ header .content {
   padding: 20px 0;
   text-align: left;
   -webkit-transform: skew(0deg, 3deg);
-  transform: skew(0deg, 3deg); }
+  transform: skew(0deg, 3deg);
+}
 
 #technologies {
   -webkit-transform: skew(0deg, -3deg);
@@ -39,7 +48,8 @@ header .content {
   background-color: #353740;
   color: #EFEFEF;
   padding: 10px 30px 10px 30px;
-  margin-top: -50px; }
+  margin-top: -50px;
+}
 
 #technologies .content {
   max-width: 1200px;
@@ -47,23 +57,28 @@ header .content {
   padding: 20px 0;
   text-align: left;
   -webkit-transform: skew(0deg, 3deg);
-  transform: skew(0deg, 3deg); }
+  transform: skew(0deg, 3deg);
+}
 
 #technologies .content p {
   font-size: 32px;
-  margin: 20px 0; }
+  margin: 20px 0;
+}
 
 #technologies blockquote {
   text-align: center;
   font-size: 52px;
   margin: 30px 0;
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 blockquote:before {
-  content: "“"; }
+  content: '“'
+}
 
 blockquote:after {
-  content: "”"; }
+  content: '”'
+}
 
 #technologies .logos {
   max-width: 1200px;
@@ -72,40 +87,48 @@ blockquote:after {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  font-size: 0; }
+  font-size: 0;
+}
 
 #technologies .logo {
   max-width: 100%;
   min-width: 100%;
   margin: 30px 0;
-  text-align: center; }
-  @media only screen and (min-width: 480px) {
-    #technologies .logo {
-      max-width: 50%;
-      min-width: 50%; } }
-  @media only screen and (min-width: 768px) {
-    #technologies .logo {
-      max-width: 50%;
-      min-width: 50%; } }
-  @media only screen and (min-width: 992px) {
-    #technologies .logo {
-      max-width: 33%;
-      min-width: 33%; } }
-  @media only screen and (min-width: 1200px) {
-    #technologies .logo {
-      max-width: 25%;
-      min-width: 25%; } }
+  text-align: center;
+
+  @media only screen and (min-width : 480px) {
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  @media only screen and (min-width : 768px) {
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  @media only screen and (min-width : 992px) {
+    max-width: 33%;
+    min-width: 33%;
+  }
+
+  @media only screen and (min-width : 1200px) {
+    max-width: 25%;
+    min-width: 25%;
+  }
+}
 
 #technologies .logo img {
   max-width: 200px;
   max-height: 80px;
-  flex: 1; }
+  flex: 1;
+}
 
 #what {
   color: #353740;
   background-color: #EFEFEF;
   padding: 100px 30px 50px 30px;
-  margin-top: -50px; }
+  margin-top: -50px;
+}
 
 #what .content {
   max-width: 1000px;
@@ -116,53 +139,65 @@ blockquote:after {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  font-size: 0; }
+  font-size: 0;
+}
 
 #what .content .highlight {
   flex: 1;
   width: 100%;
   box-sizing: border-box;
-  padding-right: 50px; }
-  @media only screen and (min-width: 480px) {
-    #what .content .highlight {
-      max-width: 100%;
-      min-width: 100%; } }
-  @media only screen and (min-width: 768px) {
-    #what .content .highlight {
-      max-width: 33%;
-      min-width: 33%; } }
-  @media only screen and (min-width: 992px) {
-    #what .content .highlight {
-      max-width: 33%;
-      min-width: 33%; } }
+  padding-right: 50px;
+
+  @media only screen and (min-width : 480px) {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  @media only screen and (min-width : 768px) {
+    max-width: 33%;
+    min-width: 33%;
+  }
+
+  @media only screen and (min-width : 992px) {
+    max-width: 33%;
+    min-width: 33%;
+  }
+}
 
 #what .content .highlight h2 {
   font-size: 30px;
-  margin: 10px 0 0 0; }
+  margin: 10px 0 0 0;
+}
 
 #what .content .highlight p {
   font-size: 22px;
-  margin: 10px 0; }
+  margin: 10px 0;
+}
 
 #what .content .highlight ul {
   margin-left: -15px;
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 #what .content .highlight ul li {
   margin: 15px 0;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 #contact {
   background-color: #EFEFEF;
   margin: -80px 0 0 0;
-  padding: 150px 0 170px 0; }
+  padding: 150px 0 170px 0;
+}
 
 #contact .content {
+  // width: 800px;
   box-sizing: border-box;
   padding: 0 20px;
   margin: 0 auto;
   font-size: 24px;
-  line-height: 32px; }
+  line-height: 32px;
+}
 
 /*
   Hutspot...
@@ -170,10 +205,18 @@ blockquote:after {
 .hs-form {
   display: flex;
   justify-content: center;
-  flex-flow: wrap row; }
+  flex-flow: wrap row;
+}
+
+.hs-form div {
+}
 
 .hs_email label {
-  display: none; }
+  display: none;
+}
+
+.hs_email {
+}
 
 .hs_email input {
   flex: 1;
@@ -183,19 +226,23 @@ blockquote:after {
   font-weight: 300;
   margin-right: 10px;
   border-radius: 4px;
-  border: 1px solid #ccc; }
-  @media only screen and (min-width: 480px) {
-    .hs_email input {
-      min-width: 400px; } }
+  border: 1px solid #ccc;
+  @media only screen and (min-width : 480px) {
+    min-width: 400px;
+  }
+}
 
 .hs-error-msgs li {
   display: block;
   font-size: 18px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .hs-error-msgs label {
-  display: block; }
+  display: block;
+
+}
 
 .hs_submit input {
   border: 0;
@@ -203,6 +250,5 @@ blockquote:after {
   background-color: #E83E27;
   padding: 10px 20px;
   font-size: 24px;
-  border-radius: 4px; }
-
-/*# sourceMappingURL=style.css.map */
+  border-radius: 4px;
+}

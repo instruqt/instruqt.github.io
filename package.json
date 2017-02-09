@@ -1,0 +1,19 @@
+{
+  "name": "instruqt.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch ./css/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instruqt/instruqt.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/instruqt/instruqt.github.io/issues"
+  },
+  "homepage": "https://github.com/instruqt/instruqt.github.io#readme"
+}
