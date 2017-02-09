@@ -115,14 +115,29 @@ blockquote:after {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-size: 0; }
 
 #what .content .highlight {
   flex: 1;
-  width: 30%;
-  margin-right: 50px; }
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 50px; }
+  @media only screen and (min-width: 480px) {
+    #what .content .highlight {
+      max-width: 50%;
+      min-width: 50%; } }
+  @media only screen and (min-width: 768px) {
+    #what .content .highlight {
+      max-width: 33%;
+      min-width: 33%; } }
+  @media only screen and (min-width: 992px) {
+    #what .content .highlight {
+      max-width: 33%;
+      min-width: 33%; } }
 
 #what .content .highlight h2 {
+  font-size: 30px;
   margin: 10px 0 0 0; }
 
 #what .content .highlight p {
@@ -134,7 +149,8 @@ blockquote:after {
   margin-top: 30px; }
 
 #what .content .highlight ul li {
-  margin: 15px 0; }
+  margin: 15px 0;
+  font-size: 20px; }
 
 #contact {
   background-color: #EFEFEF;
@@ -142,7 +158,8 @@ blockquote:after {
   padding: 150px 0 170px 0; }
 
 #contact .content {
-  width: 800px;
+  box-sizing: border-box;
+  padding: 0 20px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 32px; }
@@ -160,7 +177,6 @@ blockquote:after {
 
 .hs_email input {
   flex: 1;
-  min-width: 400px;
   height: 27px;
   padding: 10px 20px;
   font-size: 24px;
@@ -168,6 +184,9 @@ blockquote:after {
   margin-right: 10px;
   border-radius: 4px;
   border: 1px solid #ccc; }
+  @media only screen and (min-width: 480px) {
+    .hs_email input {
+      min-width: 400px; } }
 
 .hs-error-msgs li {
   display: block;
