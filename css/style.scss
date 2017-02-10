@@ -1,6 +1,13 @@
 // Colors
 $header-color: #E83E27;
+$c-background-grey: #EFEFEF;
 
+@mixin skew() {
+  transform: skew(0deg, -3deg);
+  > * {
+    transform: skew(0deg, 3deg);
+  }
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -15,7 +22,7 @@ header {
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
   background-color: $header-color;
-  color: #EFEFEF;
+  color: $c-background-grey;
   padding: 50px 30px 60px 30px;
   margin-top: -50px;
 }
@@ -25,6 +32,18 @@ header .logo {
   font-size: 70px;
   font-weight: 900;
   line-height: 70px;
+
+  span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: normal;
+    margin-left: 86px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
 }
 
 header .logo img {
@@ -46,7 +65,7 @@ header .content {
   -webkit-transform: skew(0deg, -3deg);
   transform: skew(0deg, -3deg);
   background-color: #353740;
-  color: #EFEFEF;
+  color: $c-background-grey;
   padding: 10px 30px 10px 30px;
   margin-top: -50px;
 }
@@ -125,9 +144,10 @@ blockquote:after {
 
 #what {
   color: #353740;
-  background-color: #EFEFEF;
+  background-color: $c-background-grey;
   padding: 100px 30px 50px 30px;
   margin-top: -50px;
+  @include skew();
 }
 
 #what .content {
@@ -142,26 +162,28 @@ blockquote:after {
   font-size: 0;
 }
 
+@media only screen and (min-width : 480px) {
+  #what .content .highlight {
+    max-width: 33% !important;
+    min-width: 33% !important;
+  }
+}
 #what .content .highlight {
   flex: 1;
   width: 100%;
   box-sizing: border-box;
-  padding-right: 50px;
-
-  @media only screen and (min-width : 480px) {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  @media only screen and (min-width : 768px) {
-    max-width: 33%;
-    min-width: 33%;
-  }
-
-  @media only screen and (min-width : 992px) {
-    max-width: 33%;
-    min-width: 33%;
-  }
+  padding: 0 25px;
+  max-width: 100%;
+  min-width: 100%;
+  //
+  // @media only screen and (min-width : 768px) {
+  //
+  // }
+  //
+  // @media only screen and (min-width : 992px) {
+  //   max-width: 33%;
+  //   min-width: 33%;
+  // }
 }
 
 #what .content .highlight h2 {
@@ -185,7 +207,7 @@ blockquote:after {
 }
 
 #contact {
-  background-color: #EFEFEF;
+  background-color: $c-background-grey;
   margin: -80px 0 0 0;
   padding: 150px 0 170px 0;
 }
@@ -246,9 +268,91 @@ blockquote:after {
 
 .hs_submit input {
   border: 0;
-  color: #FFFFFF;
-  background-color: #E83E27;
+  color: $header-color;
+  background-color: white;
   padding: 10px 20px;
   font-size: 24px;
   border-radius: 4px;
+}
+
+section#mission {
+  background: $header-color;
+  color: white;
+  margin-top: -100px;
+  > * {
+    transform: skew(0deg, 3deg);
+  }
+
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  span {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+  }
+
+  .form-leader {
+    text-align: center;
+  }
+  transform: skew(0deg, -3deg);
+  padding: 50px 20px 110px;
+  text-align: left;
+}
+
+section#team {
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0;
+    max-width: 900px;
+    display: block;
+    margin: 150px auto;
+    li {
+      display: inline-block;
+      width: 20%;
+      font-size: 12px;
+      vertical-align: top;
+    }
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+      border: 4px solid white;
+
+    }
+    span {
+      display: block;
+      text-align: center;
+      &.name {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+
+      &.title {
+        font-size: 1rem;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.image {
+  background-image: url('/img/screenshot1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
 }
