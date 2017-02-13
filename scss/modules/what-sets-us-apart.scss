@@ -1,0 +1,73 @@
+section#what-sets-us-apart {
+  @include skew();
+  background: $c-background-dark-grey;
+  padding: $s-spacing 0;
+  color: white;
+
+  p {
+    max-width: 1024px;
+    margin: 0 auto;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    padding: 0 ($s-spacing/2);
+    @include smallP();
+
+    &.form-leader {
+      text-align: center;
+    }
+    &:last-of-type {
+      margin-top: 50px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .hs-form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+  }
+
+  .hs-form div {
+  }
+
+  .hs_email label {
+    display: none;
+  }
+
+  .hs_email {
+  }
+
+  .hs_email input {
+    flex: 1;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 300;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    @media only screen and (min-width : 480px) {
+      min-width: 400px;
+    }
+  }
+
+  .hs-error-msgs li {
+    display: block;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hs-error-msgs label {
+    display: block;
+
+  }
+
+  .hs_submit input {
+    border: 0;
+    color: white;
+    background-color: $c-theme;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 4px;
+  }
+}

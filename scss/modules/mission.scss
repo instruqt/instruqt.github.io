@@ -1,0 +1,13 @@
+section#mission {
+  @include skew();
+  background: $c-theme;
+  color: white;
+  padding: $s-spacing 0;
+
+
+
+  p {
+    @include smallP();
+    margin-bottom: 15px;
+  }
+}

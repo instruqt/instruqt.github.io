@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch ./css/style.scss:./css/style.css"
+    "start": "sass --watch ./css/style.scss:./css/style.css",
+    "build": "sass ./scss/index.scss:./build/style.css && postcss --use autoprefixer ./build/style.css -d ./css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/instruqt/instruqt.github.io/issues"
   },
-  "homepage": "https://github.com/instruqt/instruqt.github.io#readme"
+  "homepage": "https://github.com/instruqt/instruqt.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "postcss-cli": "^2.6.0"
+  }
 }

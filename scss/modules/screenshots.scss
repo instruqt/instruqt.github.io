@@ -1,0 +1,31 @@
+#screenshots {
+  padding: $s-spacing ($s-spacing/2);
+  ul#imagelist {
+    li {
+      img {
+        height: auto;
+        max-width: 100%;
+        max-height: 300px;
+      }
+    }
+  }
+
+  @media #{$md-min} {
+    padding: ($s-spacing*2) 0;
+    ul#imagelist {
+      li {
+        width: 33%;
+        font-size: 0;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 ($s-spacing/2);
+
+        img {
+          border-radius: 4px;
+          box-shadow: 0px 10px 51px -15px rgba(0,0,0,0.75);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

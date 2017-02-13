@@ -1,0 +1,33 @@
+section#technologies {
+  @include skew();
+  background: $c-background-dark-grey;
+  padding: $s-spacing 0;
+  ul.logos {
+    li {
+      width: 100%;
+      font-size: 0;
+      margin-bottom: 30px;
+
+      img {
+        &.hor {
+          width: 200px;
+          height: auto;
+        }
+
+        &.vert {
+          height: 100px;
+          width: auto;
+        }
+      }
+    }
+
+    @media #{$md-min} {
+      li {
+        width: 25%;
+        display: inline-block;
+        font-size: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+}

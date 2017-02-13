@@ -1,0 +1,46 @@
+header {
+  @include skew();
+  background-color: $c-theme;
+  color: $c-background-grey;
+  padding: ($s-spacing + 20px) 30px 50px 30px;
+  margin-top: -($s-spacing);
+
+  .logo img {
+    width: 50px;
+  }
+
+  .brand {
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    span {
+      display: block;
+      font-size: .8rem;
+      line-height: 1rem;
+      font-weight: normal;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media #{$sm-min} {
+    text-align: left;
+    .logo, .brand {
+      display: inline-block;
+    }
+
+    .logo img {
+      width: 70px;
+    }
+
+    .brand {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
