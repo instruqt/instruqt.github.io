@@ -75,6 +75,7 @@ Created using IcoMoon - icomoon.io
 -------------------------*/
 .nc-icon-outline.spin {
   -webkit-animation: nc-icon-spin 2s infinite linear;
+  -moz-animation: nc-icon-spin 2s infinite linear;
   animation: nc-icon-spin 2s infinite linear; }
 
 @-webkit-keyframes nc-icon-spin {
@@ -82,12 +83,23 @@ Created using IcoMoon - icomoon.io
     -webkit-transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(360deg); } }
+@-moz-keyframes nc-icon-spin {
+  0% {
+    -moz-transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg); } }
 @keyframes nc-icon-spin {
   0% {
     -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg); } }
 /*------------------------
   rotated/flipped icons
@@ -95,26 +107,41 @@ Created using IcoMoon - icomoon.io
 .nc-icon-outline.rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .nc-icon-outline.rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .nc-icon-outline.rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .nc-icon-outline.flip-y {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .nc-icon-outline.flip-x {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 /*------------------------
@@ -6203,16 +6230,51 @@ ul {
   margin: 0;
   padding: 0; }
 
+.hs-form {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap row; }
+
+.hs_email label {
+  display: none; }
+
+.hs_email input {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 300;
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc; }
+  @media only screen and (min-width: 480px) {
+    .hs_email input {
+      min-width: 400px; } }
+
+.hs-error-msgs li {
+  display: block;
+  font-size: 18px;
+  margin: 0;
+  padding: 0; }
+
+.hs-error-msgs label {
+  display: block; }
+
+.hs_submit input {
+  border: 0;
+  color: white;
+  background-color: #E83E27;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 4px; }
+
 header {
-  -webkit-transform: skew(0deg, -3deg);
-          transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
   background-color: #E83E27;
   color: #EFEFEF;
   padding: 70px 30px 50px 30px;
   margin-top: -50px; }
   header > * {
-    -webkit-transform: skew(0deg, 3deg);
-            transform: skew(0deg, 3deg); }
+    transform: skew(0deg, 3deg); }
   header .logo img {
     width: 50px; }
   header .brand h1 {
@@ -6248,6 +6310,19 @@ section#what {
     text-align: center; }
     @media only screen and (min-width: 768px) {
       section#what .leader {
+        padding: 0 50px;
+        font-size: 2rem;
+        line-height: 3rem; } }
+  section#what .form-leader {
+    max-width: 1024px;
+    margin: 0 auto;
+    line-height: 2;
+    font-size: 1.4rem;
+    padding: 0 25px;
+    margin-bottom: 25px;
+    font-size: 1.8rem; }
+    @media only screen and (min-width: 768px) {
+      section#what .form-leader {
         padding: 0 50px;
         font-size: 2rem;
         line-height: 3rem; } }
@@ -6313,13 +6388,11 @@ section#what {
               left: -50px; } }
 
 section#challenge {
-  -webkit-transform: skew(0deg, -3deg);
-          transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
   background: #353740;
   padding: 25px 0; }
   section#challenge > * {
-    -webkit-transform: skew(0deg, 3deg);
-            transform: skew(0deg, 3deg); }
+    transform: skew(0deg, 3deg); }
   section#challenge h2 {
     color: white;
     font-size: 1.8rem; }
@@ -6350,14 +6423,12 @@ section#challenge {
           cursor: pointer; } }
 
 section#what-sets-us-apart {
-  -webkit-transform: skew(0deg, -3deg);
-          transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
   background: #353740;
   padding: 50px 0;
   color: white; }
   section#what-sets-us-apart > * {
-    -webkit-transform: skew(0deg, 3deg);
-            transform: skew(0deg, 3deg); }
+    transform: skew(0deg, 3deg); }
   section#what-sets-us-apart p {
     max-width: 1024px;
     margin: 0 auto;
@@ -6375,61 +6446,17 @@ section#what-sets-us-apart {
         padding: 0 50px;
         font-size: 1.4rem;
         line-height: 1.7; } }
-    section#what-sets-us-apart p.form-leader {
-      text-align: center; }
     section#what-sets-us-apart p:last-of-type {
       margin-top: 50px;
       margin-bottom: 25px; }
-  section#what-sets-us-apart .hs-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: wrap row;
-            flex-flow: wrap row; }
-  section#what-sets-us-apart .hs_email label {
-    display: none; }
-  section#what-sets-us-apart .hs_email input {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 10px 20px;
-    font-size: 24px;
-    font-weight: 300;
-    margin-right: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc; }
-    @media only screen and (min-width: 480px) {
-      section#what-sets-us-apart .hs_email input {
-        min-width: 400px; } }
-  section#what-sets-us-apart .hs-error-msgs li {
-    display: block;
-    font-size: 18px;
-    margin: 0;
-    padding: 0; }
-  section#what-sets-us-apart .hs-error-msgs label {
-    display: block; }
-  section#what-sets-us-apart .hs_submit input {
-    border: 0;
-    color: white;
-    background-color: #E83E27;
-    padding: 10px 20px;
-    font-size: 24px;
-    border-radius: 4px; }
 
 section#mission {
-  -webkit-transform: skew(0deg, -3deg);
-          transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
   background: #E83E27;
   color: white;
   padding: 50px 0; }
   section#mission > * {
-    -webkit-transform: skew(0deg, 3deg);
-            transform: skew(0deg, 3deg); }
+    transform: skew(0deg, 3deg); }
   section#mission p {
     max-width: 1024px;
     margin: 0 auto;
@@ -6445,13 +6472,11 @@ section#mission {
         line-height: 1.7; } }
 
 section#technologies {
-  -webkit-transform: skew(0deg, -3deg);
-          transform: skew(0deg, -3deg);
+  transform: skew(0deg, -3deg);
   background: #353740;
   padding: 50px 0; }
   section#technologies > * {
-    -webkit-transform: skew(0deg, 3deg);
-            transform: skew(0deg, 3deg); }
+    transform: skew(0deg, 3deg); }
   section#technologies ul.logos li {
     width: 100%;
     font-size: 0;

@@ -7,6 +7,12 @@ section#what {
     text-align: center;
   }
 
+  .form-leader {
+    @include p();
+    margin-bottom: 25px;
+    font-size: 1.4rem !important;
+  }
+
   .usp {
     font-size: 0;
     max-width: $s-container-width;
