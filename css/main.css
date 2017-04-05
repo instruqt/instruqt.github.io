@@ -55,6 +55,7 @@ header nav .logo {
 
 header nav .logo::before {
   background-image: url('../img/logo-dark.png');
+  background-size: 48px;
   display: block;
   position: absolute;
   width: 48px;
@@ -328,6 +329,7 @@ footer .logo {
 
 footer .logo::before {
   background-image: url('../img/logo-light.png');
+  background-size: 48px;
   display: block;
   position: absolute;
   width: 48px;
