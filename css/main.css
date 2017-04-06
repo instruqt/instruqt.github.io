@@ -24,7 +24,38 @@ html, body {
   color: #2C2D31;
 }
 
-@media (min-width: 1200px) {
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .content, .copy {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .content, .copy {
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .content, .copy {
+    width: 952px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
   .content, .copy {
     width: 1240px;
     margin-left: auto;
