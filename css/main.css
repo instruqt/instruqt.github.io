@@ -24,189 +24,6 @@ html, body {
   color: #2C2D31;
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-  .content, .copy {
-    width: 480px;
-    padding: 0 20px;
-  }
-
-  #benefits h2 {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits h3 {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits ul {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits li p {
-    font-size: 18px;
-  }
-
-  #benefits ul li::before {
-    font-size: 24px;
-    top: 8px;
-  }
-
-  #teams ul {
-    flex-wrap: wrap;
-  }
-
-  #teams li {
-    max-width: 100%;
-    min-width: 100%;
-    margin: 0;
-  }
-
-  #teams li::before {
-    font-size: 24px;
-  }
-
-  #teams li p {
-    font-size: 18px;
-  }
-
-  a {
-    font-size: 18px;
-  }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-  .content, .copy {
-    width: 480px;
-    padding: 0 20px;
-  }
-
-  #benefits h2 {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits h3 {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits ul {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits li p {
-    font-size: 18px;
-  }
-
-  #benefits ul li::before {
-    font-size: 24px;
-    top: 8px;
-  }
-
-  #teams ul {
-    flex-wrap: wrap;
-  }
-
-  #teams li {
-    max-width: 100%;
-    min-width: 100%;
-    margin: 0;
-  }
-
-  #teams li::before {
-    font-size: 24px;
-  }
-
-  #teams li p {
-    font-size: 18px;
-  }
-
-  a {
-    font-size: 18px;
-  }
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-  .content, .copy {
-    width: 728px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
-  }
-
-  #benefits h2 {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits h3 {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits ul {
-    max-width: 100%;
-    min-width: 100%;
-  }
-
-  #benefits li p {
-    font-size: 18px;
-  }
-
-  #benefits ul li::before {
-    font-size: 24px;
-    top: 8px;
-  }
-
-  #teams ul {
-    flex-wrap: wrap;
-  }
-
-  #teams li {
-    max-width: 100%;
-    min-width: 100%;
-    margin: 0;
-  }
-
-  #teams li::before {
-    font-size: 24px;
-  }
-
-  #teams li p {
-    font-size: 18px;
-  }
-
-  a {
-    font-size: 18px;
-  }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-  .content, .copy {
-    width: 952px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
-  }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  .content, .copy {
-    width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 header {
   height: 70px;
   background-color: #efefef;
@@ -308,7 +125,6 @@ header nav ul a {
 }
 
 #benefits h2 {
-  max-width: 50%;
   font-size: 40px;
   line-height: 40px;
   color: #7A7A7A;
@@ -316,13 +132,11 @@ header nav ul a {
 }
 
 #benefits h3 {
-  max-width: 50%;
   font-size: 22px;
   line-height: 22px;
 }
 
 #benefits ul {
-  max-width: 50%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -481,17 +295,11 @@ footer {
 }
 
 footer .content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
   border-bottom: 1px solid #3A3A3A;
   padding-bottom: 50px;
 }
 
 footer .logo {
-  flex: 0;
   display: inline-block;
   font-weight: 900;
   font-size: 40px;
@@ -513,8 +321,6 @@ footer .logo::before {
 }
 
 footer .links {
-  flex: 0;
-  display: flex;
 }
 
 footer .links h2 {
@@ -542,9 +348,6 @@ footer .links a {
 }
 
 footer .social {
-  flex: 1;
-  text-align: right;
-  display: inline-block;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -587,12 +390,71 @@ footer .slack::before {
 }
 
 footer .copy {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
   padding: 20px 0;
   color: #717171;
   font-size: 12px;
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .content, .copy {
+    padding: 20px;
+  }
+
+  #teams ul {
+    flex-wrap: wrap;
+  }
+
+  #teams li {
+    min-width: 90%;
+  }
+
+  footer .content {
+    padding: 20px;
+  }
+
+  footer .copy {
+    padding: 20px;
+  }
+
+  footer .social {
+    padding: 20px 0;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .content, .copy {
+    width: 480px;
+    padding: 0 20px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .content, .copy {
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .content, .copy {
+    width: 952px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .content, .copy {
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
