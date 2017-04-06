@@ -428,6 +428,30 @@ footer .copy {
     width: 480px;
     padding: 0 20px;
   }
+
+  .content, .copy {
+    padding: 20px;
+  }
+
+  #teams ul {
+    flex-wrap: wrap;
+  }
+
+  #teams li {
+    min-width: 90%;
+  }
+
+  footer .content {
+    padding: 20px;
+  }
+
+  footer .copy {
+    padding: 20px;
+  }
+
+  footer .social {
+    padding: 20px 0;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -437,6 +461,30 @@ footer .copy {
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+  }
+
+  .content, .copy {
+    padding: 20px;
+  }
+
+  #teams ul {
+    flex-wrap: wrap;
+  }
+
+  #teams li {
+    min-width: 90%;
+  }
+
+  footer .content {
+    padding: 20px;
+  }
+
+  footer .copy {
+    padding: 20px;
+  }
+
+  footer .social {
+    padding: 20px 0;
   }
 }
 
