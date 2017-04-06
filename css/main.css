@@ -48,7 +48,7 @@ header nav .logo {
   font-weight: 900;
   font-size: 40px;
   line-height: 1em;
-  padding: 10px 0;
+  padding: 15px 0;
   position: relative;
   margin-left: 55px;
 }
@@ -56,13 +56,15 @@ header nav .logo {
 header nav .logo::before {
   background-image: url('../img/logo-dark.png');
   background-size: 48px;
+  background-repeat: no-repeat;
+  background-position: left center;
   display: block;
   position: absolute;
   width: 48px;
   height: 48px;
   content: '';
   left: -55px;
-  top: 7px;
+  top: 11px;
 }
 
 header nav ul {
