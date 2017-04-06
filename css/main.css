@@ -394,6 +394,14 @@ footer .copy {
   .content, .copy {
     padding: 20px;
   }
+
+  header nav ul {
+    float: none;
+  }
+
+  header nav ul li {
+    margin: 0 20px 0 0;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -411,6 +419,14 @@ footer .copy {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+  }
+
+  header nav ul {
+    float: right;
+  }
+
+  header nav ul li {
+    margin: 0 0 0 20px;
   }
 }
 
