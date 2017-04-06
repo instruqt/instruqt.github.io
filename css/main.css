@@ -240,15 +240,10 @@ header nav ul a {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 #teams li {
-  flex: 1;
-  display: inline-block;
-  max-width: 30%;
-  margin: 20px 80px 20px 30px;
+  margin: 20px 0 20px 30px;
   position: relative;
 }
 
@@ -256,7 +251,6 @@ header nav ul a {
   font-family: 'Nucleo Outline';
   position: absolute;
   left: -30px;
-  top: 5px;
   font-size: 18px;
 }
 
@@ -350,7 +344,7 @@ footer .links a {
 footer .social {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   line-height: 50px;
 }
 
@@ -390,7 +384,7 @@ footer .slack::before {
 }
 
 footer .copy {
-  padding: 20px 0;
+  padding: 20px;
   color: #717171;
   font-size: 12px;
 }
@@ -400,57 +394,13 @@ footer .copy {
   .content, .copy {
     padding: 20px;
   }
-
-  #teams ul {
-    flex-wrap: wrap;
-  }
-
-  #teams li {
-    min-width: 90%;
-  }
-
-  footer .content {
-    padding: 20px;
-  }
-
-  footer .copy {
-    padding: 20px;
-  }
-
-  footer .social {
-    padding: 20px 0;
-  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
   .content, .copy {
     width: 480px;
-    padding: 0 20px;
-  }
-
-  .content, .copy {
     padding: 20px;
-  }
-
-  #teams ul {
-    flex-wrap: wrap;
-  }
-
-  #teams li {
-    min-width: 90%;
-  }
-
-  footer .content {
-    padding: 20px;
-  }
-
-  footer .copy {
-    padding: 20px;
-  }
-
-  footer .social {
-    padding: 20px 0;
   }
 }
 
@@ -460,31 +410,7 @@ footer .copy {
     width: 728px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px;
-  }
-
-  .content, .copy {
     padding: 20px;
-  }
-
-  #teams ul {
-    flex-wrap: wrap;
-  }
-
-  #teams li {
-    min-width: 90%;
-  }
-
-  footer .content {
-    padding: 20px;
-  }
-
-  footer .copy {
-    padding: 20px;
-  }
-
-  footer .social {
-    padding: 20px 0;
   }
 }
 
