@@ -1,0 +1,14 @@
+apiVersion: v1
+items:
+- apiVersion: autoscaling/v1
+  kind: HorizontalPodAutoscaler
+  metadata:
+    name: instruqt-website
+  spec:
+    maxReplicas: 5
+    minReplicas: 2
+    scaleTargetRef:
+      apiVersion: extensions/v1beta1
+      kind: Deployment
+      name: instruqt-website
+kind: List
