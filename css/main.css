@@ -398,10 +398,6 @@ footer .copy {
   header nav ul {
     float: none;
   }
-
-  header nav ul li {
-    margin: 0 20px 0 0;
-  }
 }
 
 /* Extra Small Devices, Phones */
@@ -423,10 +419,6 @@ footer .copy {
 
   header nav ul {
     float: right;
-  }
-
-  header nav ul li {
-    margin: 0 0 0 20px;
   }
 }
 
