@@ -392,9 +392,7 @@ footer .copy {
   }
 
   #intro .intro {
-    display: inline-block;
-    width: 50%;
-    min-width: 500px;
+
   }
 
   #intro .image img {
@@ -417,6 +415,12 @@ footer .copy {
     width: 952px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #intro .intro {
+    display: inline-block;
+    width: 50%;
+    min-width: 500px;
   }
 
   #intro .image {
