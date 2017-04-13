@@ -64,9 +64,7 @@ header nav .actions a {
 
 #menu-toggle:checked,
 #menu-toggle:not(:checked) {
-  position: absolute;
-  left: -9999px;
-  cursor: pointer;
+  opacity: 0;
 }
 
 #menu-toggle:checked+label+ul {
@@ -177,7 +175,7 @@ nav label:before {
 
 #technologies .logo {
   min-width: 300px;
-  margin: 30px 0;
+  margin: 30px auto;
   text-align: center;
 
   @media only screen and (min-width : 480px) {
@@ -209,7 +207,7 @@ nav label:before {
 
 #benefits {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 100px 20px;
   background: #FAFAFA;
   color: #2C2D31;
 }
@@ -299,7 +297,7 @@ nav label:before {
 #teams {
   box-sizing: border-box;
   background-color: #EFEFEF;
-  padding: 20px;
+  padding: 100px 20px;
 }
 
 #teams h2 {
@@ -357,8 +355,9 @@ nav label:before {
 }
 
 footer {
+  background-color: #A93234;
   box-sizing: border-box;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 footer ul {
@@ -393,7 +392,7 @@ footer .linkedin::before {
 
 footer .copy {
   margin: 10px 0 0 0;
-  color: #999;
+  color: #FAFAFA;
   font-size: 12px;
 }
 
