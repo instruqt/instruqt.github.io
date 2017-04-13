@@ -159,6 +159,53 @@ nav label:before {
   width: 90%;
 }
 
+#technologies {
+  padding: 100px 20px;
+}
+
+#technologies .logos {
+  max-width: 1200px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+#technologies .logo {
+  min-width: 300px;
+  /*min-width: 100%;*/
+  margin: 30px 0;
+  text-align: center;
+
+  @media only screen and (min-width : 480px) {
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  @media only screen and (min-width : 768px) {
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  @media only screen and (min-width : 992px) {
+    max-width: 33%;
+    min-width: 33%;
+  }
+
+  @media only screen and (min-width : 1200px) {
+    max-width: 25%;
+    min-width: 25%;
+  }
+}
+
+#technologies .logo img {
+  max-width: 200px;
+  max-height: 80px;
+  flex: 1;
+}
+
 #benefits {
   box-sizing: border-box;
   padding: 20px;
