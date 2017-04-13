@@ -6,52 +6,50 @@
     <title>Everyone is an expert, all the time</title>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:300,900">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <script type="text/javascript">
-      (function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-      0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-      for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-      mixpanel.init("76fa9a45ceba4c3dc5b5ae09b7504e6a");
-      mixpanel.track("Website visit");
-  </script>
   </head>
   <body>
-    <!-- Header and Navigation -->
     <header>
       <div class="content">
         <nav>
-          <div class="logo">instruqt</div>
-
+          <a class="logo" href="https://www.instruqt.com"><img src="img/logo.png" /></a>
+          <input type="checkbox" style="cursor:pointer" id="menu-toggle" />
+          <label for="menu-toggle"></label>
           <ul>
-            <li><a href="https://play.instruqt.com">Login</a></li>
-            <li><a href="https://play.instruqt.com">Signup</a></li>
+            <li>
+              <a href="https://play.instruqt.com/">Login</a>
+            </li>
+            <li>
+              <a href="https://play.instruqt.com/">Signup</a>
+            </li>
           </ul>
+          <div class="actions">
+            <a href="https://play.instruqt.com/">Login</a>
+            <a href="https://play.instruqt.com/">Signup</a>
+          </div>
         </nav>
       </div>
     </header>
-
-    <!-- Introduction -->
     <section id="intro">
       <div class="content">
-        <h1 class="title">
-          <span class="highlight">Everyone</span> is an <span class="highlight">expert.</span> <br />
-          <span class="highlight">All the time.</span>
-        </h1>
-        <h2 class="subtitle">
-          instruqt is the learning platform that helps you to build knowledge and hands-on skills in information technology and their accompanying concepts through scenario-driven, byte-sized challenges.
-        </h2>
-        <div>
-          <a href="https://goo.gl/forms/Rr8NIB3lLhrTkGtk2">Try it with your team</a>
-          <a href="https://play.instruqt.com">Try it out yourself</a>
+        <div class="intro">
+          <h1>
+            <strong>Everyone</strong> is an <strong>expert.</strong> <br />
+            <strong>All the time.</strong>
+          </h1>
+          <p>
+            Build knowledge and hands-on skills in information technology and their accompanying concepts through scenario-driven, byte-sized challenges.
+          </p>
+          <a href="#">Try it with your team</a>
+          <a href="#">Try it out yourself</a>
+        </div>
+        <div class="image">
+          <img src="img/machine.png" />
         </div>
       </div>
     </section>
-
-    <!-- Key benefits -->
     <section id="benefits">
       <div class="content">
         <div class="benefit">
-          <div class="image"></div>
           <div class="description">
             <h2>Everyone</h2>
             <h3>With the right guidance, everyone can be an expert.</h3>
@@ -63,17 +61,18 @@
               <li class="gain-insight">
                 <h4>Gain insight</h4>
                 <p>Compare yourself to your peers and share knowledge with each other. Ask others for help when you get stuck.</p>
-                </li>
+              </li>
               <li class="share-knowledge">
                 <h4>Share knowledge</h4>
                 <p>Community heroes can share their knowledge and challenge others by creating challenges.</p>
               </li>
             </ul>
-            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div class="image">
+            <img src="img/learning-paths.png" />
           </div>
         </div>
         <div class="benefit">
-          <div class="image"></div>
           <div class="description">
             <h2>Expert</h2>
             <h3>Experts share their knowledge and challenge you.</h3>
@@ -83,15 +82,16 @@
                 <p>You can only gain invaluable experience, and become an expert by doing. Through real life scenarios you are prepared to handle unforeseen challenges.</p>
               </li>
               <li class="by-experts">
-                <h4>By the experts, to make you an expert.</h4>
-                <p>Content created by the experts, to make you an expert. Working with the vendors we are able to stay at the forefront of new technologies.</p>
+                <h4>By the experts, to make you an expert</h4>
+                <p>Compare yourself to your peers and share knowledge with each other. Ask others for help when you get stuck.</p>
               </li>
             </ul>
-            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div class="image">
+            <img src="img/hands-on.png" />
           </div>
         </div>
         <div class="benefit">
-          <div class="image"></div>
           <div class="description">
             <h2>All the time</h2>
             <h3>Learn anything, anywhere, all the time.</h3>
@@ -105,50 +105,51 @@
                 <p>Ingrain learning into your daily routine, by completing byte-sized challenges whenever and wherever you have time.</p>
               </li>
             </ul>
-            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div class="image">
+            <img src="img/continuous-learning.png" />
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Team features -->
     <section id="teams">
       <div class="content">
-        <h2><span class="highlight">Benefits</span> for <span class="highlight">teams</span> of 2 or more</h2>
+        <h2><strong>Benefits</strong> for <strong>teams</strong> of 2 or more</h2>
         <h3>You never learn alone. Guided learning expeditions for teams with metrics and feedback loops.</h3>
         <ul>
-          <li class="dashboard">
+          <li class="team-analytics">
             <h4>Team analytics</h4>
-            <p>Organize your teams and appoint team leaders. See where you and your team stand and how you stack up.</p>
-            <p>Assess new prospective team members and see where they fit in.</p>
+            <p>
+              Organize your teams and appoint team leaders. See where you and your team stand and how you stack up.
+              Assess new prospective team members and see where they fit in.
+            </p>
           </li>
-          <li class="scenarios">
+          <li class="create-challenges">
             <h4>Create challenges</h4>
-            <p>Have a clear path how to get from your current state to your desired state.</p>
-            <p>Create your own challenges and simulate your own scenarios. Have the required experience when unforeseen circumstances occur.</p>
+            <p>
+              Have a clear path how to get from your current state to your desired state.
+              Create your own challenges and simulate your own scenarios. Have the required experience when unforeseen circumstances occur.
+            </p>
           </li>
-          <li class="sharing">
+          <li class="knowledge-exchange">
             <h4>Knowledge exchange</h4>
-            <p>Source knowledge from your own teams and share it internally. Create new challenges with the gained experience.</p>
-            <p>Onboard new team members and have them contribute from the get go.</p>
+            <p>
+              Source knowledge from your own teams and share it internally. Create new challenges with the gained experience.
+              Onboard new team members and have them contribute from the get go.
+            </p>
           </li>
         </ul>
-        <a href="https://goo.gl/forms/Rr8NIB3lLhrTkGtk2">Try it with your team</a>
       </div>
     </section>
-
-    <!-- Footer and Links -->
     <footer>
       <div class="content">
-        <div class="logo">instruqt</div>
-        <ul class="social">
+        <ul>
+          <a href="https://www.facebook.com/instruqt"><li class="facebook"></li></a>
           <a href="https://www.linkedin.com/company-beta/17889622/"><li class="linkedin"></li></a>
-          <a href="https://instruqt.slack.com"><li class="slack"></li></a>
           <a href="https://twitter.com/instruqt"><li class="twitter"></li></a>
-          <a href="https://www.facebook.com/instruqt/"><li class="facebook"></li></a>
         </ul>
+        <div class="copy">© 2017 instruqt. All Rights Reserved.</div>
       </div>
-      <div class="copy">&copy; 2017 instruqt. All Rights Reserved.</div>
     </footer>
   </body>
 </html>
