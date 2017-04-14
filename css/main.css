@@ -50,7 +50,7 @@ header nav .actions {
   text-align: right;
 }
 
-header nav .actions a {
+.actions a {
   text-decoration: none;
   display: inline-block;
   background-color: #EE3A00;
@@ -233,7 +233,8 @@ nav label:before {
 }
 
 #benefits .image img {
-  width: 80%;
+  width: 70%;
+  margin-bottom: 30px
 }
 
 #benefits h2 {
@@ -371,6 +372,10 @@ nav label:before {
 
 #teams .knowledge-exchange::before {
   content: '\ef48';
+}
+
+#teams .actions {
+  margin: 20px 0;
 }
 
 footer {
