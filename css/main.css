@@ -116,7 +116,7 @@ nav label:before {
 
 #intro {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 20px 100px 20px;
 }
 
 #intro .intro h1 {
@@ -146,15 +146,6 @@ nav label:before {
   border-radius: 3px;
   border-bottom: 5px solid #A93234;
   margin: 20px 0 5px 0;
-}
-
-#intro .image {
-  text-align: center;
-}
-
-#intro .image img {
-  margin: 30px 0;
-  width: 90%;
 }
 
 #technologies {
@@ -223,18 +214,19 @@ nav label:before {
   color: #2C2D31;
 }
 
+#benefits .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 #benefits .benefit {
+  flex: 1;
+  display: inline-block;
+  width: 30%;
+  min-width: 250px;
+  padding: 20px;
   padding-bottom: 30px;
-}
-
-#benefits .image {
-  margin-top: 30px;
-  text-align: center;
-}
-
-#benefits .image img {
-  width: 70%;
-  margin-bottom: 30px
 }
 
 #benefits h2 {
@@ -280,10 +272,6 @@ nav label:before {
   content: '\e7ca';
 }
 
-#benefit-expert .image {
-  float: left;
-}
-
 #benefits .by-experts::before {
   content: '\e9e5';
 }
@@ -312,6 +300,10 @@ nav label:before {
 #benefits p {
   margin: 5px 0;
   color: #7A7A7A;
+}
+
+#benefits .actions {
+  margin-top: 30px;
 }
 
 #teams {
@@ -425,6 +417,14 @@ footer .copy {
   header nav .actions {
     display: none;
   }
+
+  #benefits .benefit {
+    flex: 0;
+    display: block;
+    min-width: 100%;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
 }
 
 @media only screen and (min-width : 480px) {
@@ -441,33 +441,21 @@ footer .copy {
     margin: 20px 10px 5px 0;
   }
 
-  #intro .image img {
-    width: 60%;
-  }
-
-  #benefits .image img {
-    width: 60%;
+  #benefits .benefit {
+    flex: 0;
+    display: block;
+    min-width: 100%;
+    padding: 20px;
+    padding-bottom: 30px;
   }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 768px) and (max-width : 992px) {
   .content {
     width: 728px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #intro {
-    vertical-align: top;
-  }
-
-  #intro .intro {
-
-  }
-
-  #intro .image img {
-    width: 60%;
   }
 
   #intro .intro a {
@@ -475,8 +463,12 @@ footer .copy {
     margin: 20px 10px 5px 0;
   }
 
-  #benefits .image img {
-    width: 60%;
+  #benefits .benefit {
+    flex: 0;
+    display: block;
+    min-width: 100%;
+    padding: 20px;
+    padding-bottom: 30px;
   }
 }
 
@@ -486,32 +478,6 @@ footer .copy {
     width: 952px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #intro .intro {
-    display: inline-block;
-    width: 50%;
-    min-width: 500px;
-  }
-
-  #intro .image {
-    vertical-align: top;
-    display: inline-block;
-    width: 40%;
-    text-align: center;
-  }
-
-  #benefits .description {
-    display: inline-block;
-    width: 50%;
-    min-width: 500px;
-  }
-
-  #benefits .image {
-    vertical-align: top;
-    display: inline-block;
-    width: 40%;
-    text-align: center;
   }
 }
 
