@@ -158,7 +158,15 @@ nav label:before {
 }
 
 #technologies {
-  padding: 100px 20px;
+  padding: 90px 20px;
+}
+
+#technologies h2 {
+  font-size: 35px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 0 1em;
 }
 
 #technologies .logos {
@@ -174,35 +182,38 @@ nav label:before {
 }
 
 #technologies .logo {
-  min-width: 300px;
-  margin: 30px auto;
+  padding: 0px 5px;
+  margin: 20px auto;
   text-align: center;
+}
 
-  @media only screen and (min-width : 480px) {
-    max-width: 50%;
-    min-width: 50%;
+@media only screen and (min-width : 0px) {
+  #technologies .logo {
+    flex-basis: 40%;
   }
+}
 
-  @media only screen and (min-width : 768px) {
-    max-width: 50%;
-    min-width: 50%;
+@media only screen and (min-width : 768px) {
+  #technologies .logo {
+    flex-basis: 30%;
   }
+}
 
-  @media only screen and (min-width : 992px) {
-    max-width: 33%;
-    min-width: 33%;
+@media only screen and (min-width : 992px) {
+  #technologies .logo {
+    flex-basis: 30%;
   }
+}
 
-  @media only screen and (min-width : 1200px) {
-    max-width: 25%;
-    min-width: 25%;
+@media only screen and (min-width : 1200px) {
+  #technologies .logo {
+    flex-basis: 20%;
   }
 }
 
 #technologies .logo img {
-  max-width: 200px;
-  max-height: 80px;
-  flex: 1;
+  max-width: 100%;
+  max-height: 70px;
 }
 
 #benefits {
@@ -256,12 +267,20 @@ nav label:before {
   font-size: 18px;
 }
 
+#benefits .anywhere::before {
+  content: '\edd5';
+}
+
 #benefits .continuous-learning::before {
   content: '\edb1';
 }
 
 #benefits .future-fit::before {
   content: '\e7ca';
+}
+
+#benefit-expert .image {
+  float: left;
 }
 
 #benefits .by-experts::before {
@@ -343,15 +362,15 @@ nav label:before {
 }
 
 #teams .team-analytics::before {
-  content: '\edb1';
+  content: '\ecd6';
 }
 
-#teams .create-challenges::before {
+#teams .custom-challenges::before {
   content: '\e7ca';
 }
 
 #teams .knowledge-exchange::before {
-  content: '\e9e5';
+  content: '\ef48';
 }
 
 footer {
