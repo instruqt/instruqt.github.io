@@ -218,7 +218,7 @@ nav label:before {
 
 #benefits {
   box-sizing: border-box;
-  padding: 100px 20px;
+  padding: 50px 20px;
   background: #FAFAFA;
   color: #2C2D31;
 }
@@ -421,7 +421,7 @@ footer .copy {
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 0px) and (max-width : 480px) {
   header nav .actions {
     display: none;
   }
@@ -435,18 +435,26 @@ footer .copy {
   #menu-toggle:checked+label+ul {
     display: none;
   }
+}
 
+@media only screen and (min-width : 0px) {
   #intro .intro a {
     display: inline-block;
     margin: 20px 10px 5px 0;
   }
 
   #intro .image img {
+    display: none;
     width: 60%;
   }
 
   #benefits .image img {
+    display: none;
     width: 60%;
+  }
+
+  #benefit-expert .image {
+    float: none;
   }
 }
 
@@ -467,6 +475,7 @@ footer .copy {
   }
 
   #intro .image img {
+    display: none;
     width: 60%;
   }
 
@@ -476,7 +485,12 @@ footer .copy {
   }
 
   #benefits .image img {
+    display: none;
     width: 60%;
+  }
+
+  #benefit-expert .image {
+    float: none;
   }
 }
 
@@ -499,6 +513,17 @@ footer .copy {
     display: inline-block;
     width: 40%;
     text-align: center;
+  }
+
+  #intro .image img {
+    display: inline-block;
+  }
+  #benefits .image img {
+    display: inline-block;
+  }
+
+  #benefit-expert .image {
+    float: left;
   }
 
   #benefits .description {
