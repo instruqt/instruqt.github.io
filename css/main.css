@@ -15,7 +15,7 @@
 }
 
 html, body {
-  background: #282C34;
+  background: #171F2E;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 17px;
@@ -44,16 +44,28 @@ header nav .logo img {
   height: 40px;
 }
 
-header nav .actions {
-  flex: 1;
+header nav .actions, header nav .links {
+  #flex: 1;
   text-decoration: none;
   text-align: right;
+}
+
+.links a {
+  text-decoration: none;
+  display: inline-block;
+  #background-color: #EB3C1A;
+  text-align: center;
+  padding: 10px 20px;
+  color: #FFFFFF;
+  #border-radius: 3px;
+  #border-bottom: 5px solid #A93234;
+  margin: 0 10px 0 0;
 }
 
 .actions a {
   text-decoration: none;
   display: inline-block;
-  background-color: #EE3A00;
+  background-color: #EB3C1A;
   text-align: center;
   padding: 10px 20px;
   color: #FFFFFF;
@@ -136,16 +148,25 @@ nav label:before {
   padding: 0;
 }
 
-#intro .intro a {
+#intro .intro a  {
   text-decoration: none;
   display: block;
-  background-color: #EE3A00;
   text-align: center;
   padding: 10px 20px;
+  margin: 20px 0 5px 0;
+}
+
+#intro .intro a.play  {
   color: #FFFFFF;
+  background-color: #EB3C1A;
   border-radius: 3px;
   border-bottom: 5px solid #A93234;
-  margin: 20px 0 5px 0;
+}
+
+#intro .intro a.team{
+  font-size: 18px;
+  font-weight: bolder;
+  color: #FFF; 
 }
 
 #intro .image {
@@ -213,7 +234,7 @@ nav label:before {
 
 #technologies .logo img {
   max-width: 100%;
-  max-height: 70px;
+  max-height: 40px;
 }
 
 #benefits {
@@ -225,6 +246,7 @@ nav label:before {
 
 #benefits .benefit {
   padding-bottom: 30px;
+  min-height: 300px;
 }
 
 #benefits .image {
@@ -238,7 +260,7 @@ nav label:before {
 }
 
 #benefits h2 {
-  color: #EE3A00;
+  color: #EB3C1A;
   font-size: 40px;
   margin: 10px 0;
 }
@@ -311,50 +333,52 @@ nav label:before {
 
 #benefits p {
   margin: 5px 0;
+  font-size: 18px;
   color: #7A7A7A;
 }
 
-#teams {
+#story {
   box-sizing: border-box;
   background-color: #EFEFEF;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
-#teams h2 {
+#story h2 {
   font-size: 40px;
   font-weight: 300;
   margin: 10px 0;
 }
 
-#teams h3 {
+#story h3 {
   font-size: 22px;
   font-weight: 300;
   margin: 10px 0;
 }
 
-#teams h4 {
+#story h4 {
   margin: 5px 0;
   font-size: 18px;
 }
 
-#teams p {
+#story p {
   margin: 5px 0;
+  font-size: 18px;
   color: #7A7A7A;
 }
 
-#teams ul {
+#story ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#teams li {
+#story li {
   position: relative;
   box-sizing: border-box;
   padding: 10px 0 10px 30px;
 }
 
-#teams li::before {
+#story li::before {
   font-family: 'Nucleo Outline';
   position: absolute;
   left: 2px;
@@ -362,19 +386,93 @@ nav label:before {
   font-size: 18px;
 }
 
-#teams .team-analytics::before {
+#story .team-analytics::before {
   content: '\ecd6';
 }
 
-#teams .custom-challenges::before {
+#story .custom-challenges::before {
   content: '\e7ca';
 }
 
-#teams .knowledge-exchange::before {
+#story .knowledge-exchange::before {
   content: '\ef48';
 }
 
-#teams .actions {
+#story .actions {
+  margin: 20px 0;
+}
+
+#story.image {
+  text-align: center;
+}
+
+#story .image img {
+  margin: 30px 0;
+  width: 90%;
+}
+
+#events {
+  box-sizing: border-box;
+  background: #FAFAFA;
+  padding: 80px 20px;
+}
+
+#events h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+#events h3 {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+#events h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+#events p {
+  margin: 5px 0;
+  color: #7A7A7A;
+  font-size: 18px;
+}
+
+#events ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#events li {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 0 10px 30px;
+}
+
+#events li::before {
+  font-family: 'Nucleo Outline';
+  position: absolute;
+  left: 2px;
+  top: 17px;
+  font-size: 14px;
+}
+
+#events .team-analytics::before {
+  content: '\ecd6';
+}
+
+#events .custom-challenges::before {
+  content: '\e7ca';
+}
+
+#events .knowledge-exchange::before {
+  content: '\ef48';
+}
+
+#events .actions {
   margin: 20px 0;
 }
 
@@ -492,6 +590,9 @@ footer .copy {
   #benefit-expert .image {
     float: none;
   }
+
+  #story .story {
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -520,6 +621,7 @@ footer .copy {
   }
   #benefits .image img {
     display: inline-block;
+
   }
 
   #benefit-expert .image {
@@ -528,16 +630,31 @@ footer .copy {
 
   #benefits .description {
     display: inline-block;
-    width: 50%;
+    width: 60%;
     min-width: 500px;
   }
 
   #benefits .image {
     vertical-align: top;
     display: inline-block;
-    width: 40%;
+    width: 39%;
     text-align: center;
   }
+
+  #story .story {
+    display: inline-block;
+    width: 60%;
+    min-width: 500px;
+  }
+
+  #story .image {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+  }
+
+
+
 }
 
 /* Large Devices, Wide Screens */
