@@ -402,12 +402,11 @@ nav label:before {
   margin: 20px 0;
 }
 
-#story.image {
+#story .image {
   text-align: center;
 }
 
 #story .image img {
-  margin: 30px 0;
   width: 90%;
 }
 
@@ -642,6 +641,7 @@ footer .copy {
   }
 
   #story .story {
+    vertical-align: top;
     display: inline-block;
     width: 60%;
     min-width: 500px;
