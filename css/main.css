@@ -182,12 +182,22 @@ nav label:before {
   margin: 40px 0;
 }
 
-#intro .livestream a {
+#intro .livestream a.button-livestream {
   color: #FFFFFF;
   background-color: #EB3C1A;
   border-radius: 3px;
   border-bottom: 5px solid #A93234;
-  font-size: 40px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#intro .livestream a.button-questions {
+  color: #FFFFFF;
+  background-color: #EB3C1A;
+  border-radius: 3px;
+  border-bottom: 5px solid #A93234;
+  font-size: 20px;
+  display: inline-block;
 }
 
 #technologies {
